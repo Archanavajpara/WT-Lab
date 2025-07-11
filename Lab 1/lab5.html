@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        const num1=parseFloat(prompt("Enter a  number:"));
+        let rev=0,rem,ori=num1;
+        while(num1!=0)
+        {
+            rem=num1%10;
+            rev=rev*10+rem;
+            num1=parseInt(num1/10); 
+        }
+        if(ori==rev)
+        {
+            document.write("The number is a palindrome");
+        }
+        else
+        {
+            document.write("Not palindromic number");
+        }
+        
+
+    </script>
+</body>
+</html>

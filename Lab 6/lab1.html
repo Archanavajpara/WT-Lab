@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form name="Login">
+        <input type="text" name="type1"  placeholder="Username">
+        <input type="password" name="type2" placeholder="Password">
+        <button type="button" onclick="ById()">Submit</button>
+
+    </form>
+    <script>
+        function ById() 
+        {
+            var a = document.forms["Login"];
+            var b=a.type1.value;
+            var c=a.type2.value;
+            if (b=="Archana" && c=="Archana_123") {
+                alert("Login Successful");
+            }
+            else
+            {
+                alert("Invalid Username And Password");
+            }
+            console.log(b);
+            console.log(c);
+        }
+        // funcion ById
+
+
+    </script>
+</body>
+</html>

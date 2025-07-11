@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Stored In Array</title>
+</head>
+<body>
+    <script>
+         var Students=[
+            {
+                StudentName:"Else Waston",
+                Gender:" Female" ,
+                Age:20,
+                University:"Darshan"
+            },
+            {
+                StudentName:"Shenha Sharma",
+                Gender:"Female" ,
+                Age:25,
+                University:"Marvadi"
+            },
+            {
+                StudentName:"Arjun Bala",
+                Gender:"Male" ,
+                Age:29,
+                University:"Darshan"
+            },
+        ]
+        for (let i = 0; i < Students.length; i++) {
+            document.write(Students[i].StudentName);
+            document.write("</br>");
+            document.write(Students[i].Gender);
+            document.write("</br>");
+            document.write(Students[i].Age);
+            document.write("</br>");
+            document.write(Students[i].University);
+            document.write("</br>");
+            document.write("<hr>");
+        }
+    </script>
+</body>
+</html>

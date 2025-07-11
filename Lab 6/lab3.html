@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background</title>
+</head>
+<body>
+    <button onclick="Start()">Start</button>
+    <button onclick="Stop()">Stop</button>
+    <script>
+        function StartRandomColor() {
+            var r=Math.floor(Math.random()*256);
+            var g=Math.floor(Math.random()*256);
+            var b=Math.floor(Math.random()*256);
+            document.body.style.backgroundColor='rgb('+r+','+g+','+b+')';
+        }
+        function Start() {
+            a=setInterval(StartRandomColor,1000);
+        }
+        function Stop() {
+            clearInterval(a);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image with Text</title>
+  <style>
+   
+    .backgroundimage {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .backgroundimage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .heading {
+      position: absolute;
+      top: 30%;
+      right: 70%;
+      color: white;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="backgroundimage">
+    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg" alt="background image" />
+    <div class="heading">
+      <p>WEB DESIGN AND DEVELOPMENT</p>
+      <p>MADE BY ARCHANA</p>
+    </div>
+  </div>
+</body>
+</html>

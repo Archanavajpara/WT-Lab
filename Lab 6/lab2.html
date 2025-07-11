@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="validate(event)">
+        <label>Username:</label>
+        <input type="text" placeholder="Enter Username" name="Username" id="Username">
+        <br><br>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter Password" name="Password" id="Password">
+        <br><br>
+        <label>Confirm_Password:</label>
+        <input type="password" placeholder="Enter Confirm_Password" name="Confirm_Password" id="Confirm_Password">
+        <br><br>
+        <label>Enrollment_Number:</label>
+        <input type="text" placeholder="Enter Enrollment_Number" name="Enrollment_Number" id="Enrollment_Number">
+        <br><br>
+        <label>Email:</label>
+        <input type="text" placeholder="Enter Email" name="Email" id="Email">
+        <br><br>
+        <button >Submit</button>
+    </form>
+    <script>
+        function validate(event) 
+        {
+            event.preventDefault();
+            var Username = document.getElementById("Username");
+            pattern1='^[a-zA-Z_.]{8,}$';
+            reg1=new RegExp(pattern1);
+            if(!reg1.test(Username.value))
+            {
+                alert("Username should contain only alphabets, dot and underscore and Minium 8 character");
+            }
+
+            var password=document.getElementById("password");
+            pattern2='^(?=.\d)(?=.[!@#$%^&])[A-Za-z\d!@#$%^&]{8,12}$';
+            reg2=new RegExp(pattern2);
+            if(!reg2.test(password.value))
+            {
+                alert("Invalid Password");
+            }
+
+            var Confirm_Password=document.getElementById("Confirm_Password");
+            if(!reg2.test(Confirm_Password.value)||password!=Confirm_Password)
+            {
+                alert("Invalid confirm_Password");
+            }
+            var Enrollment_Number=document.getElementById("Enrollment_Number");
+            pattern3='^\d{10,12}$';
+            reg3=new RegExp(pattern3);
+            if(!reg3.test(Enrollment_Number.value))
+            {
+                alert("Invalid Enrollment Number");
+            }
+            var Email=document.getElementById("Email");
+            pattern4='^[a-z@gmail.com]{1,}$';
+            reg4=new RegExp(pattern4);
+            if(!reg4.test(Email.value))
+            {
+                alert("Invalid email");
+            }
+
+        }
+    </script>
+</body>
+</html>

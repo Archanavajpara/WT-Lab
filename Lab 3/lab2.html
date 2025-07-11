@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <script>
+        const a=parseInt(prompt("Enter a size of array:"));
+        let arr=[];
+        for (let i = 0; i < a; i++) {
+            arr.push(parseInt(prompt("Enter a element"+i+":")));
+        }
+        arr.sort();
+        document.write("Ascending array is:"+arr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculties Stored In Array</title>
+</head>
+<body>
+    <script>
+        var Faculties=[
+            {
+                FacultyName:"Dhvanik Zala",
+                Faculty:" Faculty of Engineering" ,
+                Age:30,
+                University:"Darshan"
+            },
+            {
+                FacultyName:"Shenha Sharma",
+                Faculty:" Faculty of Mechanical" ,
+                Age:25,
+                University:"Marvadi"
+            },
+            {
+                FacultyName:"Arjun Bala",
+                Faculty:" Faculty of Engineering" ,
+                Age:33,
+                University:"Darshan"
+            },
+        ]
+        for (let i = 0; i < Faculties.length; i++) {
+            document.write(Faculties[i].FacultyName);
+            document.write("</br>");
+            document.write(Faculties[i].Faculty);
+            document.write("</br>");
+            document.write(Faculties[i].Age);
+            document.write("</br>");
+            document.write(Faculties[i].University);
+            document.write("</br>");
+            document.write("<hr>");
+        }
+    </script>
+</body>
+</html>

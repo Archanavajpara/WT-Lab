@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstarate Different Array Functions</title>
+</head>
+<body>
+    <script>
+         const a=parseInt(prompt("Enter a size of array:"));
+        let arr=[];
+        // let arr=["Lion","Monkey","Tiger","Deer"]; use Static Array for String
+        for (let i = 0; i < a; i++) 
+        {
+            arr.push(parseInt(prompt("Enter a element"+i+":")));
+        }
+        document.write("Original_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        arr.push(20);//"Cat"
+        document.write("Push_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        arr.pop();
+        document.write("Pop_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        arr.shift();
+        document.write("Shift_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        arr.unshift(9);//"Dog",use single digit
+        document.write("UnShift_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        arr.sort();//sort in Alphabetic order
+        document.write("Sort_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        arr.splice(2,0,"Mango");
+        document.write("Splice_Array:"+arr);
+        document.write("<br>");
+        document.write("<hr>");
+        
+    </script>
+</body>
+</html>
