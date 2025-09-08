@@ -1,19 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 export default function Navbar() {
 
     return(
     <>
         <nav class="Navbar">
-        <div class="container-fluid">
-            <ul class="navbar">
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Home </a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Contact Us</a></li>
-                </ul>
-            
-        </div>
+            <h2>SmartCare</h2>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
+            </ul>
         </nav>
     </>
     );
